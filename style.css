@@ -98,6 +98,7 @@ p {
   margin-bottom: 1em;
   background: #fff;
   color: #333;
+  margin: 1em;
 }
 
 .card-content {
@@ -148,9 +149,12 @@ p {
   #section-a .content-text p {
     padding-top: 0;
   }
-  .content-wrap,
-  #section-b ul {
+  .content-wrap {
     grid-column: 2/4;
+  }
+
+  #section-b ul {
+    grid-column: 1/5;
   }
 
   .box,
