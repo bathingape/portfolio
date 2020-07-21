@@ -113,6 +113,11 @@ p {
   padding: 2em;
 }
 
+#section-c .project {
+  border: 1px solid black;
+  margin: 1em;
+}
+
 /* Section D / Boxes  */
 
 #section-d .box {
@@ -122,6 +127,23 @@ p {
 
 #section-d .box:first-child {
   background: #2690d4;
+}
+
+.box p {
+  text-align: left;
+}
+
+.box li {
+  text-align: left;
+  padding: 1em;
+}
+.box a:hover {
+  color: blue;
+}
+
+.box a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Footer  */
@@ -138,12 +160,13 @@ p {
 @media (min-width: 700px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 32em)) 1fr;
   }
 
   #section-a .content-text {
     columns: 2;
-    column-gap: 2em;
+    column-gap: 1em;
+    float: left;
   }
 
   #section-a .content-text p {
