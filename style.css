@@ -46,6 +46,9 @@ p {
   color: #333;
 }
 
+.content-title {
+  margin-top: 1em;
+}
 /* Nav */
 
 .navbar {
@@ -115,7 +118,7 @@ p {
 #showcase .bg-image {
   position: absolute;
   background: #333
-    url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    url("https://media.giphy.com/media/3o7aD6ydPRgEPllYQM/giphy.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,7 +140,7 @@ p {
 #showcase .content-wrap,
 #section-a .content-wrap {
   padding: 0 1.5em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 /* Section A  */
