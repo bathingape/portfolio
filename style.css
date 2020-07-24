@@ -102,6 +102,7 @@ p {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
+  line-height: 4rem;
 }
 
 .side-nav a {
@@ -144,7 +145,7 @@ p {
 }
 #showcase p {
   margin-top: 3em;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 
 #showcase .content-wrap,
@@ -163,6 +164,7 @@ p {
 
 #section-a .self p {
   text-align: left;
+  margin-bottom: 1em;
 }
 
 /* Section B */
@@ -239,13 +241,13 @@ p {
 }
 
 /* Media Queries  */
-@media (max-width: 700px) {
+@media (max-width: 765px) {
   .navbar-nav {
     display: none;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 765px) {
   .open-slide {
     display: none;
   }
