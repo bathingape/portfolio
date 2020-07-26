@@ -9,7 +9,26 @@
     <meta property="og:url" content="https://bathingape.github.io/portfolio" />
     <meta property="og:image" content="https://avatars3.githubusercontent.com/u/53068281?s=460&u=02939a1f43eca0a4e7a9950f67a9c6be6b80b067&v=4"/>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />   
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    $(window).scroll( function(){
+        $('.fadein').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top 
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1','margin-bottom':'0px'},1000);
+            }
+            
+        }); 
+    });
+});
+
+
+    </script>
     <script type="text/javascript" src="script.js"></script>
    
 
@@ -55,23 +74,23 @@
 
     <!-- Header Showcase -->
     
-    <header id="showcase" class="grid">
+    <header id="showcase" class="grid ">
       <div class="bg-image">  </div> 
         <div class="content-wrap">
             <h1>Welcome! <br />bathingape's Portfolio 😀😀  </h1>
             <p>
             꾸준히 성장하고 싶은 개발자입니다. <br />뛰어난 적응력과 창의성으로 주변 사람들에게 귀감이 되고 싶습니다. </p>
-            <a href="#section-b" class="btn">My Skill</a>          
+            <a href="#section-b"  class="btn">My Skill</a>          
                 
         <div>
     </header>
 
     <!-- Main Area -->
-    <main id="main">
+    
       <!-- Section A  -->
-      <section id="section-a" class="grid">
+      <section id="section-a" class="grid fadein" >
         <section id="section-a" class="grid"></section>
-        <div class="content-wrap">
+        <div class="content-wrap ">
           <h2 class="content-title">About Me</h2>
           <div class="content-text">
             <div class="self"> 
@@ -101,10 +120,10 @@
       </section>    
 
       <!-- Section B -->
-      <section id="section-b" class="grid">
-        <ul>
+      <section id="section-b" class="grid fadein" >
+        <ul >
           <li>
-            <div class="card">
+            <div class="card hideme">
               <img
                 src="https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                 alt=""
@@ -112,11 +131,18 @@
               <div class="card-content">
                 <h3 class="card-title">Front-End Development</h3>
                 <p>HTML</p>
+                <progress value="80" max="100"></progress>
+                <!-- <div class="css-progressbar-intermediate">intermediate</div> -->
                 <p>CSS</p>
+                <progress value="60" max="100"></progress>
                 <p>Javascript(ES6)</p>
+                <progress value="70" max="100"></progress>
                 <p>React.js (React Hooks)</p>
+                <progress value="70" max="100"></progress>
                 <p>Redux</p>
+                <progress value="10" max="100"></progress>
                 <p>React-Navtive</p>
+                <progress value="20" max="100"></progress>
               </div>
             </div>
           </li>
@@ -129,9 +155,13 @@
               <div class="card-content">
                 <h3 class="card-title">Back-End Development</h3>
                 <p>Node.js</p>
+                <progress value="70" max="100"></progress>
                 <p>Express.js</p>
+                <progress value="70" max="100"></progress>
                 <p>MySQL</p>
+                <progress value="50" max="100"></progress>
                 <p>Sequelize ORM</p>
+                <progress value="50" max="100"></progress>
               </div>
             </div>
           </li>
@@ -144,9 +174,13 @@
               <div class="card-content">
                 <h3 class="card-title">DevOps Development</h3>
                 <p> AWS S3</p>
+                <progress value="70" max="100"></progress>
                 <p>AWS EC2</p>
+                <progress value="70" max="100"></progress>
                 <p> AWS RDS</p>
+                <progress value="50" max="100"></progress>
                 <p>ubuntu</p>
+                <progress value="50" max="100"></progress>
               </div>
             </div>
           </li>
@@ -159,8 +193,11 @@
               <div class="card-content">
                 <h3 class="card-title">Collaboration tools</h3>
                 <p>Git</p>
+                <progress value="80" max="100"></progress>
                 <p>Slack</p>
+                <progress value="80" max="100"></progress>
                 <p>Notion</p>
+                <progress value="70" max="100"></progress>
               </div>
             </div>
           </li>
@@ -168,7 +205,7 @@
       </section>
 
       <!-- Section C  -->
-      <section id="section-c" class="grid">
+      <section id="section-c" class="grid fadein">
         <div class="content-wrap">
           <h2 class="content-title">
             My Projects 
@@ -211,7 +248,7 @@
       </section>
 
       <!-- Section D -->
-      <section id="section-d" class="grid">
+      <section id="section-d" class="grid fadein">
         <div class="box">
           <h2 class="content-title">Contact Me</h2>
           <p>      
@@ -236,6 +273,7 @@
      
     </footer>
   
+    
   </body>
 </html>
 

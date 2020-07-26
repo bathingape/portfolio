@@ -54,7 +54,7 @@ p {
 #to-top {
   position: fixed;
   top: 90%;
-  left: 85%;
+  left: 90%;
   width: 2em;
   height: 2em;
 }
@@ -286,4 +286,25 @@ p {
   #section-b li {
     width: 31%;
   }
+}
+
+/* .css-progressbar-intermediate {
+  width: 80%;
+  animation: progressbar-intermediate 2s ease-out;
+  background-color: #e4c465;
+  color: #e4c465;
+}
+
+@keyframes progressbar-intermediate {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+} */
+.fadein {
+  opacity: 0;
+  margin-bottom: -300px;
+  max-width: 100%;
 }
