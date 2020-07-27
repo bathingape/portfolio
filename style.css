@@ -183,11 +183,15 @@ p {
   margin-bottom: 1em;
   background: #fff;
   color: #333;
-  margin: 1em;
+  margin: 2px;
 }
 
 .card-content {
-  padding: 1.5em;
+  padding: 2px;
+}
+
+progress {
+  margin-bottom: 10px;
 }
 
 /* Section C */
@@ -290,15 +294,16 @@ p {
     width: 31%;
   }
 }
+
 /* 
 .css-progressbar-intermediate {
   width: 80%;
   animation: progressbar-intermediate 2s ease-out;
   background-color: #e4c465;
   color: #e4c465;
-}
+} */
 
-@keyframes progressbar-intermediate {
+/* @keyframes progressbar-intermediate {
   0% {
     width: 0%;
   }

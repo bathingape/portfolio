@@ -16,10 +16,10 @@
     $(window).scroll( function(){
         $('.fadein').each( function(i){
             
-            var bottom_of_element = $(this).offset().top 
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            var el = $(this).offset().top 
+            var where = $(window).scrollTop() + $(window).height();
             
-            if( bottom_of_window > bottom_of_element ){
+            if( where > el ){
                 $(this).animate({'opacity':'1','margin-bottom':'0px'},1200);
             }
             
@@ -121,6 +121,7 @@
 
       <!-- Section B -->
       <section id="section-b" class="grid fadein" >
+        <div class="content-wrap">
         <ul >
           <li>
             <div class="card hideme">
@@ -132,7 +133,7 @@
                 <h3 class="card-title">Front-End Development</h3>
                 <p>HTML</p>
                 <progress value="90" max="100"></progress>
-                <!-- <div class="css-progressbar-intermediate">intermediate</div> -->
+                <!-- <div class="css-progressbar-intermediate">intermediate</div>  -->
                 <p>CSS</p>
                 <progress value="70" max="100"></progress>
                 <p>Javascript(ES6)</p>
@@ -199,6 +200,7 @@
             </div>
           </li>
         </ul>
+      </div>
       </section>
 
       <!-- Section C  -->
@@ -248,8 +250,7 @@
       <section id="section-d" class="grid fadein">
         <div class="box">
           <h2 class="content-title">Contact Me</h2>
-          <p>      
- 부트캠프 교육기관에서 팀원들과 두 개의 프로젝트를 진행하면서 개발 경험이 있습니다. <br /> <br />좋은 코드, 깔끔한 코드를 위해서 리펙토링도 해보았고 , 새로운 스택에 대해서도 해낼 수 있다는 마음가짐을 가지고 새로운 기술로도 개발을 해보았습니다. <br /><br />팀원들과의 커뮤니케이션을 통해 부족한 코딩 실력에도 함께 난관을 부딪혀가면서 프로젝트를 마무리하면서 할 수 있다는 성취감을 맛보았습니다. 이를 다시금 한 번 느껴보고 싶습니다.
+          <p>   부트캠프 교육기관에서 팀원들과 두 개의 프로젝트를 진행하면서 개발 경험이 있습니다. <br /> <br />좋은 코드, 깔끔한 코드를 위해서 리펙토링도 해보았고 , 새로운 스택에 대해서도 해낼 수 있다는 마음가짐을 가지고 새로운 기술로도 개발을 해보았습니다. <br /><br />팀원들과의 커뮤니케이션을 통해 부족한 코딩 실력에도 함께 난관을 부딪혀가면서 프로젝트를 마무리하면서 할 수 있다는 성취감을 맛보았습니다. 이를 다시금 한 번 느껴보고 싶습니다.
           </p>
           <p>hbd9425@gmail.com</p>
         </div>
@@ -267,10 +268,7 @@
       <div>Project By <strong>Park Dong-Gun</strong> <br/>
              GIF By <strong>Erica Anderson</strong>
     </div>
-     
     </footer>
-  
-    
   </body>
 </html>
 
