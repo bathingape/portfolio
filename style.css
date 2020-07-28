@@ -5,6 +5,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #333;
   color: #fff;
@@ -62,7 +63,7 @@ p {
 /* Nav */
 
 .navbar {
-  background-color: #3b5998;
+  background-color: #1abc9c;
   overflow: hidden;
   height: 60px;
   width: 100%;
@@ -200,11 +201,11 @@ progress {
   background: #fff;
   color: #333;
   padding: 2em;
+  height: 800px;
+  position: relative;
 }
-
-#section-c .project {
-  border: 1px solid black;
-  margin: 1em;
+#section-c .content-wrap {
+  /* padding: 2em; */
 }
 
 /* Section D / Boxes  */
@@ -316,4 +317,88 @@ progress {
   opacity: 0;
   margin-bottom: -300px;
   max-width: 100%;
+}
+
+/* project */
+
+/* pc ver  */
+
+.first {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-20%, -20%);
+}
+.second {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-20%, -20%);
+}
+
+.project {
+  cursor: pointer;
+  width: 120px;
+  height: 30%;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6s linear;
+}
+
+.front img {
+  height: 100%;
+}
+
+.front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+  background-color: white;
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content {
+  color: #2c3e50;
+  width: 100%;
+}
+
+.sm {
+  margin: 20px 0;
+}
+
+.sm a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.sm a:hover {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.project:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.project:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+#section-c {
+  background-color: #95a5a6;
 }
