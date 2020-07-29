@@ -247,9 +247,33 @@ progress {
     display: none;
   }
   .project {
+    position: absolute;
     cursor: pointer;
     width: 70%;
-    height: 70%;
+    height: 40%;
+    left: 25%;
+  }
+  .middle {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+
+  .detail {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+
+  .back-content {
+    color: #2c3e50;
+    position: absolute;
+    top: 50%;
+  }
+  #section-c {
+    height: 1200px;
   }
 }
 
@@ -295,13 +319,22 @@ progress {
   #section-b li {
     width: 31%;
   }
-  #section-c {
-    height: 1000px;
-  }
   .project {
     cursor: pointer;
-    width: 30%;
-    height: 60%;
+    width: 40%;
+    height: 70%;
+  }
+  .detail {
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+  }
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -330,17 +363,10 @@ progress {
 
 /* project */
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .front,
 .back {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   overflow: hidden;
   backface-visibility: hidden;
   position: absolute;
@@ -363,6 +389,7 @@ progress {
 .back-content {
   color: #2c3e50;
   width: 100%;
+  left: 50%;
 }
 
 .sm {
@@ -396,4 +423,9 @@ progress {
 
 #section-c {
   background-color: #4834d4;
+}
+
+#section-c .content-title {
+  position: absolute;
+  left: 10%;
 }
