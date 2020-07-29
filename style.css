@@ -199,13 +199,8 @@ progress {
 
 #section-c {
   background: #fff;
-  color: #333;
-  padding: 2em;
   height: 800px;
   position: relative;
-}
-#section-c .content-wrap {
-  /* padding: 2em; */
 }
 
 /* Section D / Boxes  */
@@ -249,6 +244,11 @@ progress {
 @media (max-width: 765px) {
   .navbar-nav {
     display: none;
+  }
+  .project {
+    cursor: pointer;
+    width: 70%;
+    height: 80%;
   }
 }
 
@@ -294,6 +294,14 @@ progress {
   #section-b li {
     width: 31%;
   }
+  #section-c {
+    height: 1000px;
+  }
+  .project {
+    cursor: pointer;
+    width: 30%;
+    height: 60%;
+  }
 }
 
 /* 
@@ -321,25 +329,11 @@ progress {
 
 /* project */
 
-/* pc ver  */
-
-.first {
+.middle {
   position: absolute;
-  top: 30%;
-  left: 10%;
-  transform: translate(-20%, -20%);
-}
-.second {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  transform: translate(-20%, -20%);
-}
-
-.project {
-  cursor: pointer;
-  width: 120px;
-  height: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .front,
