@@ -48,7 +48,7 @@ p {
 }
 
 .content-title {
-  margin-top: 1em;
+  /* margin-top: 1em; */
 }
 
 /* to top  */
@@ -122,7 +122,7 @@ p {
 /* Header Showcase */
 
 #showcase {
-  min-height: 1000px;
+  min-height: 600px;
   color: #fff;
   text-align: center;
 }
@@ -135,7 +135,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   z-index: -1;
   opacity: 0.4;
 }
@@ -143,10 +143,11 @@ p {
 #showcase h1 {
   padding-top: 5em;
   padding-bottom: 0;
+  margin-bottom: 0;
 }
 #showcase p {
-  margin-top: 20%;
-  margin-bottom: 5em;
+  margin-top: 10%;
+  margin-bottom: 10em;
 }
 
 #showcase .content-wrap,
@@ -199,7 +200,7 @@ progress {
 
 #section-c {
   background: #fff;
-  height: 800px;
+  height: 700px;
   position: relative;
 }
 
@@ -248,7 +249,7 @@ progress {
   .project {
     cursor: pointer;
     width: 70%;
-    height: 80%;
+    height: 70%;
   }
 }
 
@@ -394,5 +395,5 @@ progress {
 }
 
 #section-c {
-  background-color: #95a5a6;
+  background-color: #4834d4;
 }
